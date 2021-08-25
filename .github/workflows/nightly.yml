@@ -4,8 +4,6 @@ on:
   schedule:
     - cron: '0 0 * * *'
 
-env:
-
 jobs:
   setup_matrix:
     name: "Setup Test Matrix"

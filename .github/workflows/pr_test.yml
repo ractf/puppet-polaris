@@ -2,8 +2,6 @@ name: "PR Testing"
 
 on: [pull_request]
 
-env:
-
 jobs:
   setup_matrix:
     name: "Setup Test Matrix"
