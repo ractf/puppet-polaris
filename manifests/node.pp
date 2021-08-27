@@ -13,12 +13,12 @@ class polaris::node (
   Stdlib::Ensure::Service $service_ensure = 'running',
 ) {
   contain polaris::repo
-  contain polaris::node::install
+  contain polaris::install
   contain polaris::node::config
   contain polaris::node::service
 
   Class['polaris::node']
-  -> Class['polaris::node::install']
+  -> Class['polaris::install']
   -> Class['polaris::node::config']
   -> Class['polaris::node::service']
 }

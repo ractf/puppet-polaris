@@ -9,6 +9,10 @@
     {
       "name": "puppetlabs/stdlib",
       "version_requirement": ">= 7.0.0"
+    },
+    {
+      "name": "puppetlabs/yumrepo_core",
+      "version_requirement": ">= 1.0.7"
     }
   ],
   "operatingsystem_support": [
@@ -33,5 +37,5 @@
   ],
   "pdk-version": "2.2.0",
   "template-url": "https://github.com/puppetlabs/pdk-templates#main",
-  "template-ref": "heads/main-0-g51828b4"
+  "template-ref": "heads/main-0-gb4d80a6"
 }

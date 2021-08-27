@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-describe 'polaris::controller::install' do
+describe 'polaris::install' do
   on_supported_os.each do |os, os_facts|
     context "on #{os}" do
       let(:facts) { os_facts }

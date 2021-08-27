@@ -3,6 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include polaris::controller::install
-class polaris::controller::install {
+#   include polaris::install
+class polaris::install {
+  if $polaris::manage_package {
+    
+  }
 }
