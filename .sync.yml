@@ -2,7 +2,8 @@
 common:
   disable_legacy_facts: true
   owner: 'ractf'
-  honeycomb: false
+  honeycomb:
+    writekey: "${{ secrets.HONEYCOMB_TOKEN }}"
 
 .travis.yml:
   delete: true

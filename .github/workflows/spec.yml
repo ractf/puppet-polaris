@@ -6,6 +6,10 @@ on:
   workflow_dispatch:
   pull_request:
 
+env:
+  HONEYCOMB_WRITEKEY: ${{ secrets.HONEYCOMB_TOKEN }}
+  HONEYCOMB_DATASET: litmus tests
+
 jobs:
   setup_matrix:
     name: "Setup Test Matrix"

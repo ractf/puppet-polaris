@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: '0 0 * * *'
 
+env:
+  HONEYCOMB_WRITEKEY: ${{ secrets.HONEYCOMB_TOKEN }}
+  HONEYCOMB_DATASET: litmus tests
+
 jobs:
   setup_matrix:
     name: "Setup Test Matrix"
