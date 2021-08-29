@@ -2,7 +2,8 @@
 common:
   disable_legacy_facts: true
   owner: 'ractf'
-  honeycomb: false
+  honeycomb:
+    writekey: "${{ secrets.HONEYCOMB_TOKEN }}"
 
 .travis.yml:
   delete: true
@@ -17,5 +18,6 @@ appveyor.yml:
   unmanaged: false
 .github/workflows/nightly.yml:
   unmanaged: false
+  slack-notifications: false
 .github/workflows/release.yml:
   unmanaged: false

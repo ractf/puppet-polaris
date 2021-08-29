@@ -1,0 +1,13 @@
+---
+fixtures:
+  forge_modules:
+    stdlib: "puppetlabs/stdlib"
+    yumrepo_core: "puppetlabs/yumrepo_core"
+    apt: "puppetlabs-apt"
+    inifile: "puppetlabs-inifile"
+    registry: "puppetlabs-registry"
+    concat: "puppetlabs/concat"
+  repositories:
+    provision: 'https://github.com/puppetlabs/provision.git'
+    facts: 'https://github.com/puppetlabs/puppetlabs-facts.git'
+    puppet_agent: 'https://github.com/puppetlabs/puppetlabs-puppet_agent.git'
