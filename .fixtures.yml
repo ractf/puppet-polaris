@@ -8,6 +8,6 @@ fixtures:
     registry: "puppetlabs-registry"
     concat: "puppetlabs/concat"
   repositories:
-    provision: 'git://github.com/puppetlabs/provision.git'
+    provision: 'https://github.com/puppetlabs/provision.git'
     facts: 'https://github.com/puppetlabs/puppetlabs-facts.git'
     puppet_agent: 'https://github.com/puppetlabs/puppetlabs-puppet_agent.git'
