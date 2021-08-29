@@ -10,10 +10,6 @@ class polaris::node (
   Sensitive[String]       $sensitive_single_user_password,
   Optional[String]        $sentry_dsn,
 
-  Boolean                 $manage_package                = true,
-  String                  $package_name                  = 'polaris',
-  String                  $package_ensure                = 'latest',
-
   Boolean                 $manage_service                = true,
   Stdlib::Ensure::Service $service_ensure                = 'running',
 

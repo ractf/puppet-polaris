@@ -6,6 +6,8 @@
 #   include polaris::install
 class polaris::install {
   if $polaris::manage_package {
-    
+    ensure_packages($polaris::package_name, {
+      ensure => $polaris::package_ensure,
+    })
   }
 }

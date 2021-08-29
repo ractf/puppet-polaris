@@ -4,4 +4,8 @@
 #
 # @example
 #   include polaris
-class polaris {}
+class polaris (
+  Boolean                 $manage_package                = true,
+  String                  $package_name                  = 'polaris',
+  String                  $package_ensure                = 'latest',
+) {}
